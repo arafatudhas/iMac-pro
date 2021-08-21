@@ -1,49 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mac book pro</title>
-    <!-- Google font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <!-- external css  -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apple iMac</title>
+        <!-- Google font Link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet">
+        <!-- external css  -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- bootstrap CSS only -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+            crossorigin="anonymous">
+    </head>
 
-<body>
-    <section class="container my-5">
-        <div class="">
-            <div class="row p-5 panda-bg-info rounded bg-gradient d-flex
-                    align-items-center my-5">
-                <div class="col-lg-5">
-                    <img src="images/mac.png" class="d-block w-100" alt="...">
+    <body>
+        <section>
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col">
+                        <img src="images/mac.png" alt="" width=80%>
+
+                    </div>
+                    <div class="col">
+                        <h2>
+                            Customize your Blue 24‑inch iMac with Apple M1 chip
+                            and Built‑in VESA Mount Adapter.
+                        </h2>
+                        <p>Designed for Mac, M1 delivers faster CPU performance
+                            and faster graphics. M1 optimizes custom
+                            technologies and power efficiency for the new iMac.
+                            The system-on-a-chip design provides greater
+                            integration and works seamlessly with the
+                            most advanced operating system in the world, macOS
+                            Big Sur.
+                        </p>
+
+                        <!--Memory part-->
+                        <div class="memory">
+                            <h4><b>Memory</b></h4>
+                            <button type="button" id="8gb-memory" class="btn
+                                btn-outline-secondary">8GB unified Memory</button>
+                            <button type="button" id="16gb-memory" class="btn
+                                btn-outline-secondary">16GB unified Memory</button>
+                        </div>
+
+
+                        <!--Storage part-->
+                        <div class="storage">
+                            <h4><b>Storage</b></h4>
+                            <button type="button" id="256gb-ssd" class="btn
+                                btn-outline-secondary">256GB
+                                SSD Storage</button>
+                            <button type="button" id="512gb-ssd" class="btn
+                                btn-outline-secondary">512GB
+                                SSD Storage</button>
+                            <button type="button" id="1tb-ssd" class="btn
+                                btn-outline-secondary">1TB
+                                SSD Storage</button>
+                        </div>
+
+
+                        <!--Delivery part-->
+                        <div class="delivery">
+                            <h4><b>Choose your delivery option </b></h4>
+                            <button type="button" id="without-delivery-charge"
+                                class="btn
+                                btn-outline-secondary">Friday Aug 25 FREE Prime
+                                Delivery</button>
+                            <button type="button" id="with-delivery-charge"
+                                class="btn
+                                btn-outline-secondary">Friday Aug 21 Delivery
+                                charge
+                                $20</button>
+                        </div>
+
+
+
+                        <!--Price Update part-->
+                        <div class="price-Table-container">
+                            <table class="table">
+
+                                <tbody>
+                                    <tr>
+
+                                        <td>Best Price</td>
+                                        <td>$<span id="best-price">1299</span></td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>Extra Memory Cost </td>
+                                        <td>$<span id="extra-memory-price">0</span></td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>Extra Storage Cost </td>
+                                        <td>$<span id="extra-storage-price">0</span></td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>Delivery Charge </td>
+                                        <td>$<span id="extra-delivery-price">0</span></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Total Price </td>
+                                        <td>$<span id="total-price">1299</span></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="promo-code-container">
+                            <h4>Add Promo Code</h4>
+                            <div class="row row-cols-lg-auto g-3
+                                align-items-center">
+                                <div class="col-12">
+
+                                    <input type="text" class="form-control"
+                                        id="promo-code" placeholder="ApplyHere">
+                                </div>
+
+
+                                <div class="col-12">
+                                    <button id="code-entered" type="submit"
+                                        class="btn btn btn-secondary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="col-lg-7">
-                    <h1>
-                        Customize your Blue 24‑inch iMac with Apple M1 chip and Built‑in VESA Mount Adapter.
-                    </h1>
-                    <p>
-                        Designed for Mac, M1 delivers faster CPU performance and faster graphics. M1 optimizes custom technologies and power efficiency for the new iMac. The system-on-a-chip design provides greater integration and works seamlessly with the most advanced operating
-                        system in the world, macOS Big Sur.
-                    </p>
-                </div>
+
 
             </div>
-        </div>
-    </section>
-
-
-
-
-
-
-    <script src="js/mac-design.js"></script>
-</body>
+        </section>
+        <footer class="text-center m-5">
+            <hr>
+            <h1> Total : $<span id="display-price">1299</span></h1>
+        </footer>
+        <script src="js/mac-config-design.js"></script>
+    </body>
 
 </html>
